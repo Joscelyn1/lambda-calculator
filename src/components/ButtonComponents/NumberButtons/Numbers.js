@@ -1,16 +1,28 @@
-import React from "react";
+import React, { useState } from 'react';
+import { numbers } from '../../../data';
+import NumberButton from './NumberButton';
 
-//import any components needed
-
-//Import your array data to from the provided data file
-
-const Numbers = () => {
+const Numbers = (props) => {
+  const [ourNumbers, setNumbers] = useState(numbers);
+  const numbersMapped = ourNumbers.map(elements => elements);
   // STEP 2 - add the imported data to state
+  // const [numbers, setNumbers] = useState(numbers);
+
+
+  //const numberButtons = numbers.map(element => {
+  //  `<button>${element}</button>`
+  //});
+
+
+  
   return (
-    <div>
-      {/* STEP 3 - Use .map() to iterate over your array data and return a button
-       component matching the name on the provided file. Pass
-       it any props needed by the child component*/}
+    <div className="numbers-container-2">
+      {ourNumbers.map(info => (
+        <NumberButton key={info} numbersMapped={info} />
+      ))}
+
     </div>
   );
 };
+
+export default Numbers;

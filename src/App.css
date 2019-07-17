@@ -1,0 +1,104 @@
+.special-buttons {
+
+    border: 2px solid red;
+}
+
+
+.numbers-container-2 {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+}
+
+.operators-container {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.special-buttons-container {
+
+    display: flex;
+
+
+
+}
+.App {
+    display: flex;
+    background-color: #bb1233;
+    width: 350px;
+    padding: 10px;
+    height: 520px;
+    border-radius: 15px;
+
+}
+
+.special-btn {
+    background-color: #2061b0;
+
+}
+
+.number-btn {
+    background-color: #113c78;
+
+}
+
+.operator-btn {
+    background-color: #3db5e5;
+
+
+}
+
+.btn {
+    color: white;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 8px 6px -6px black;
+    margin: 1px;
+}
+
+.app-container {
+    margin: 0;
+    padding: 0;
+}
+
+.enter {
+
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+
+}
+
+.container-enter {
+    width: 350px;
+    height: 50px;
+    background-color:  #2d2829;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.container-sp-num {
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bigger-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    width: 100px;
+}
